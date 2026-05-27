@@ -1,4 +1,6 @@
 import { defineConfig } from "vite";
-import { bundledConfig } from "@lovable.dev/vite-tanstack-config";
+import pkg from "@lovable.dev/vite-tanstack-config";
+
+const { bundledConfig } = pkg;
 
 export default defineConfig(bundledConfig);
