@@ -1,10 +1,4 @@
 import { defineConfig } from "vite";
-import tsconfigPaths from "vite-tsconfig-paths";
-import { tanstackStartVite } from "@tanstack/react-start/vite";
+import { bundledConfig } from "@lovable.dev/vite-tanstack-config";
 
-export default defineConfig({
-  plugins: [
-    tanstackStartVite(),
-    tsconfigPaths()
-  ],
-});
+export default defineConfig(bundledConfig);
